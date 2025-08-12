@@ -1,4 +1,5 @@
 import './App.css'
+import Counter from './Components/Counter'
 import Todos from './Components/Todos'
 import UserDisplay from './Components/UserDisplay'
 import UserList from './Components/UserList'
@@ -10,7 +11,8 @@ function App() {
     <>
       {/* <UserDisplay /> */}
       {/* <UserList /> */}
-      <Todos />
+      {/* <Todos /> */}
+      <Counter />
     </>
   )
 }

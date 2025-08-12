@@ -13,7 +13,7 @@ import React, { useState } from 'react'
 
 const Todos = () => {
 
-    const [todos, setTodos] = useState([])
+    const [todos, setTodos] = useState("")
     const [newTodo, setNewTodo] = useState([])
 
     const addTodo = () => {
@@ -40,6 +40,7 @@ const Todos = () => {
     };
 
     const handleEdit = (id, newText) => {
+        if (newText.trim() === "") return;
         setTodos(todos.map((todo) =>
             todo.id === id ? { ...todo, text: newText } : todo
         ));
