@@ -1,4 +1,13 @@
 import './App.css'
+import AlertProp from './Components/Phase 2/AlertProp'
+import Content from './Components/Phase 2/Content'
+import Header from './Components/Phase 2/Header'
+import Layout from './Components/Phase 2/Layout'
+import ModalProp from './Components/Phase 2/ModalProp'
+import ProfileProp from './Components/Phase 2/ProfileProp'
+import PropCard from './Components/Phase 2/PropCard'
+import Sidebar from './Components/Phase 2/Sidebar'
+import TabsProp from './Components/Phase 2/TabsProp'
 import ActiveEmployee from './Components/Phase1/ActiveEmployee'
 import CartPrice from './Components/Phase1/CartPrice'
 import CharacterCounter from './Components/Phase1/CharacterCounter'
@@ -23,7 +32,7 @@ import UserList from './Components/Phase1/UserList'
 import WindowWidth from './Components/Phase1/WindowWidth'
 
 function App() {
-  
+
 
   return (
     <>
@@ -46,9 +55,19 @@ function App() {
       {/* <CharacterCounter /> */}
       {/* <TitleChanger /> */}
       {/* <WindowWidth /> */}
-      <Stopwatch />
+      {/* <Stopwatch /> */}
       {/* <FetchPost /> */}
       {/* <Countdown /> */}
+      {/* <PropCard /> */}
+      {/* <Layout
+        header={<Header />}
+        sidebar={<Sidebar />}
+        content={<Content />}
+      /> */}
+      {/* <AlertProp /> */}
+      {/* <ModalProp /> */}
+      {/* <ProfileProp /> */}
+      <TabsProp />
     </>
   )
 }
