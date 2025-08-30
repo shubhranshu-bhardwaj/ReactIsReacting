@@ -19,9 +19,13 @@ const LoginForm = () => {
 
     const validate = () => {
         let errs = {};
-        if (!form.email.includes("@")) errs.email = "Enter a valid email";
-        if (!form.password) errs.password = "Password is required";
+        if (!form.email.includes("@")) {
+            errs.email = "Enter a valid email";
+        }
+        if (!form.password) {
+            errs.password = "Password is required";
         return errs;
+        }
     };
 
     const handleSubmit = (e) => {
